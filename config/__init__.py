@@ -1,10 +1,10 @@
 """
-APE (Agentic Pipeline Engine) 설정 모듈
+APE (Agentic Pipeline Engine) Configuration Module
 
-이 모듈은 APE (Agentic Pipeline Engine) 시스템의 설정 파일입니다.
-모델 설정 및 임베딩 설정을 관리합니다.
+This module is the configuration file for the APE (Agentic Pipeline Engine) system.
+It manages model configurations and network settings.
 """
 
-# 설정 모듈 로드
+# Load configuration modules
 from config.models_config import *
-from config.embedding_config import *
+from config.network_config import *

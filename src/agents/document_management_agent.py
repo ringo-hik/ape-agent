@@ -42,9 +42,8 @@ class DocumentManagementAgent(BaseAgent):
         self.docs_dir = os.path.join(current_dir, "data", "docs")
         os.makedirs(self.docs_dir, exist_ok=True)
         
-        # 임베딩 및 벡터 DB는 사용하지 않음
-        self.embedding_model = None
-        self.vector_db = None
+        # Document management system
+        self.doc_store = None
         
         logger.info(f"문서 관리 에이전트 초기화 완료: {self.agent_id}")
     
@@ -561,6 +560,5 @@ class DocumentManagementAgent(BaseAgent):
             "agent_type": self.agent_type,
             "document_count": document_count,
             "collections": collection_counts,
-            "vector_db_available": False,
-            "embedding_model_available": False
+            "doc_store_available": False
         }
