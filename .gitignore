@@ -22,12 +22,19 @@ data/
 *.md
 *.pdf
 *.docx
-*.txt
+# *.txt - 중요 설정 파일 제외
 *.csv
 *.xls
 *.xlsx
 *.json
 docs/
+
+# 이 파일들은 항상 추적
+!requirements.txt
+!setup.bat
+!setup.sh
+!run_ape.bat
+!run_ape.sh
 
 # 개발 환경 설정
 .idea/
