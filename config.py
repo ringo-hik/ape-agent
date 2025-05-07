@@ -35,13 +35,7 @@ VERIFY_SSL = get_boolean_env("VERIFY_SSL", False)
 # 기본 모델 설정
 DEFAULT_MODEL = get_env("DEFAULT_MODEL", "internal-model")
 
-# 임베딩 모델 설정
-EMBEDDING_MODEL = {
-    "name": get_env("EMBEDDING_MODEL_NAME", "KoSimCSE-roberta"),
-    "path": get_env("EMBEDDING_MODEL_PATH", "models/KoSimCSE-roberta-multitask"),
-    "dimension": get_int_env("EMBEDDING_DIMENSION", 768),
-    "max_seq_length": get_int_env("EMBEDDING_MAX_SEQ_LENGTH", 512)
-}
+# 임베딩 모델 설정은 제거됨
 
 # 모델 구성
 MODELS_CONFIG = {

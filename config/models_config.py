@@ -54,27 +54,6 @@ MODELS = {
             }
         }
     },
-    "embedding": {
-        "name": "임베딩 모델",
-        "id": "embedding-model-v1",
-        "description": "텍스트 임베딩 서비스 모델",
-        "provider": "primary",
-        "endpoint": get_env("EMBEDDING_ENDPOINT", "http://embedding-service/api"),
-        "apiKey": get_env("EMBEDDING_API_KEY", ""),
-        "maxTokens": 0,  # 임베딩 모델은 max_tokens가 필요 없음
-        "temperature": 0.0,  # 임베딩 모델은 temperature가 필요 없음
-        "requestTemplate": {
-            "headers": {
-                "Authorization": "Bearer ${API_KEY}",
-                "Content-Type": "application/json"
-            },
-            "payload": {
-                "model": "embedding-model-v1",
-                "input": [],
-                "encoding_format": "float"
-            }
-        }
-    },
         # LLM 모델
     "openrouter-llama": {
         "name": "OpenRouter Llama3",

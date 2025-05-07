@@ -136,7 +136,7 @@ def get_settings() -> Dict[str, Any]:
         return load_config()
     return _SETTINGS
 
-# Removed embedding, vector DB, document processing, and search config functions
+# No embedding, vector DB, document processing, or search config functions
 
 def get_agent_config(agent_type: str) -> Dict[str, Any]:
     """에이전트 설정 가져오기"""
